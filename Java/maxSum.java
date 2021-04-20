@@ -14,7 +14,7 @@ You can see a "hollow square" of values at the top left, which are the nearest-n
 
 public class maxSum {
 	
-	public static void main(String[] args) {  // 1,2,3
+	public static void main(String[] args) {  
 		
 		int[][] arr = new int[][] {
 			{1, 2, 3, 4, 5, 6},
@@ -28,7 +28,7 @@ public class maxSum {
 		System.out.println("max is - " + maxNeighborSum(arr));   //21
 								
 	} 
-	// Returns the maximum-neighbor-sum of the 6x6 input array
+	
 	public static int maxNeighborSum(int[][] arr) {
 		int max = neighborSum(arr,1,1);
 		
