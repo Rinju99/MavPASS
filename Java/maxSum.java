@@ -27,8 +27,8 @@ public class maxSum {
 											
 		System.out.println("max is - " + maxNeighborSum(arr));   //21
 								
-	} // a=[-1,-4,-5]
-	
+	} 
+	// Returns the maximum-neighbor-sum of the 6x6 input array
 	public static int maxNeighborSum(int[][] arr) {
 		int max = neighborSum(arr,1,1);
 		
