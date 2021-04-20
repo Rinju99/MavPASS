@@ -1,3 +1,15 @@
+/*Many graphics algorithms use a grid approach that looks at the value of nearest-neighbor pixels. 
+Here we'll start with a very simple algorithm to find the smallest sum of nearest-neighbor pixels.
+Imagine a 6x6 two-dimensional array of integers:
+
+1 1 1 0 0 0
+1 0 1 0 0 0
+1 1 1 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+You can see a "hollow square" of values at the top left, which are the nearest-neighbors of the element at [1, 1]. The sum of these values is 8. There are 16 possible hollow-squares in the 6x6 grid. Your task is to calculate the nearest-neighbor-sum of each, and return the biggest (which in this case would be 8 -- some of the other neighbor-sums in this grid are 4, 3, 2, and 1. The array will always be 6x6.
+*/
 
 
 public class maxSum {
@@ -10,10 +22,10 @@ public class maxSum {
 			{3, 1, 3, 1, 1, 1},
 			{4, 1, 1, 4, 1, 1},
 			{5, 1, 1, 1, 5, 1},
-			{6, 1, 1, 1, 19, 6}
+			{6, 1, 1, 1, 6, 6}
 			};
 											
-		System.out.println("max is - " + maxNeighborSum(arr));  
+		System.out.println("max is - " + maxNeighborSum(arr));   //21
 								
 	} // a=[-1,-4,-5]
 	
